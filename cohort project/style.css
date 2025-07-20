@@ -1,0 +1,507 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f3eed9;
+  font-family: 'Courier New', Courier, monospace;
+}
+/* The start of the header nav section*/
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  height: 50px;
+  width: 100%;
+  color: black;
+  padding-right: 30px;
+  transition: 0.5s ease-in;
+}
+
+.menu-button i{
+  font-weight: bold;
+  font-size: xx-large;
+}
+.menu-button{
+  display: none;
+}
+@media (max-width: 655px){
+  .hide-on-mobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+
+/* The nav anchor of the header section */
+nav a{
+  text-decoration: none;
+  padding: 10px;
+  width: 100%;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+/* The nav anchor:hover of the header section */
+nav a:hover{
+  background-color: black;
+  color: wheat;
+  transition: 0.5s;
+  border-radius: 8px;
+}
+/* The first child of the list items (the logo) */
+nav li:first-child{
+  margin-right: auto;
+}
+
+/* the sidebar menu of the header section */
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #eeedeb;
+  border-radius: 5px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 15px;
+  line-height: 50px;
+  padding-left: 10px;
+  z-index: 900;
+  transform: transition(100%);
+  transition: transform 0.9s ease;
+}
+.sidebar.active{
+  transform: translateX(0);
+}
+
+nav button{
+  background-color: rgb(198, 198, 204);
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+nav button:hover{
+  background-color: black;
+  color: wheat;
+  transition: 0.5s;
+}
+
+
+.container{
+  margin-inline: auto;
+  width: min(90% 70.5rem);
+}
+.split-1{
+display: flex;
+flex-direction: row;
+padding-left: 20px;
+line-height: 25px;
+margin-top: 50px;
+}
+.split-1 h1{
+  color: #08040b;
+}
+
+.split-1 a{
+  text-decoration: none;
+  color: white;
+}
+
+
+@media (min-width: 168px){
+  .split-1{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+}
+
+.Get-Book-Container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+
+@media (max-width: 770px){
+  .Get-Book-Container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 480px){
+  .Get-Book-Container{
+    display: flex;
+    flex-direction: row;
+  }
+  .Get-Book-Container{
+    width: 100%;
+    
+  }
+}
+
+.Get-Book-Container .Get-button{
+  background-color: blue;
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.Get-button:hover{
+  background-color: #c7b467;
+  transition: 0.5s;
+}
+
+.Get-Book-Container .Book-button{
+  align-items: center;
+  background-color: rgb(198, 198, 204);
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.Book-button:hover{
+  background-color: blue;
+  transition: 0.5s;
+}
+
+.hero-bg-mobile {
+  background-image: url(project-img/hero-bg-mobile.png);
+  width: 100%;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-left: 20px;
+}
+@media (min-width: 672px){
+  .hero-bg-mobile{
+    display: none;
+    width: 100%;
+  }
+}
+
+.hero-bg{
+  background-image: url(project-img/Hero-bg.png);
+  width: 100%;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-left: 20px;
+}
+
+@media (max-width: 672px){
+  .hero-bg{
+    display: none;
+  }
+}
+
+/* The video preview css section */
+section .video-preview{
+  background-color: black;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+section .video-preview h2{
+  white-space: wrap;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+section .video-preview img{
+  width: 100%;
+}
+section .video-preview button{
+  margin-top: 15px;
+  margin-bottom: 40px;
+  width: 110px;
+  height: 45px;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+section .video-preview button:hover{
+  background-color: black;
+  color: wheat;
+  transition: 0.5s;
+}
+
+/* The review css section */
+.reviews{
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+  background-color: rgb(14, 13, 13);
+  color: white;
+  width: 100%;
+}
+
+.review{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+@media (min-width: 480px){
+  .review{
+    flex-direction: row;
+  }
+}
+.h2-reviews{
+  text-align: start;
+  padding-left: 20px;
+  padding-top: 80px;
+}
+.health-coach, 
+.personal-trainer,
+.fitness-enthusiast{
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  height: 300px;
+}
+.names{
+  padding-top: 100px;
+  white-space: nowrap;
+  text-align: start;
+  padding-left: 20px;
+}
+
+.p-review-career{
+  text-align: start;
+  padding-left: 20px;
+  white-space: nowrap;
+}
+/* The css pricing section */
+.price-split{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+@media (max-width: 480px){
+  .price-split{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.price{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  line-height: 50px;
+}
+.basic-pricing{
+   background-color: rgb(252, 242, 225);
+  color: black;
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  line-height: 50px;
+  font-family:  arial;
+  font-style: normal;
+  width: 100%;
+  border-radius: 10px;
+}
+.free{
+  font-size: xx-large;
+}
+
+.pro-pricing{
+  background-color: black;
+  color: white;
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  line-height: 50px;
+  font-family:  arial;
+  font-style: normal;
+  width: 100%;
+  border-radius: 10px;
+}
+/*the fontawesome icon */
+.fa{
+  display: block;
+  line-height: 50px;
+}/* End of the fontawesome icon*/
+
+
+.basic-pricing button{
+  width: 96%;
+ height: 50px;
+ border-radius: 10px;
+ border: none;
+ background-color: blue;
+ cursor: pointer;
+ transition: 0.5s;
+}
+.basic-pricing button:hover{
+  background-color: black;
+  color: wheat;
+  transition: 0.5s;
+}
+.pro-pricing button{
+  width: 96%;
+ height: 50px;
+ border-radius: 10px;
+ border: none;
+ background-color: blue;
+ cursor: pointer;
+ transition: 0.5s;
+}
+.pro-pricing button:hover{
+  background-color: rgb(252, 242, 225);
+  color: black;
+  transition: 0.5s;
+}
+.final-price-review{
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* The css section for the frequently asked questions */
+.faq{
+  background-color: #e7e7e4;
+}
+section .faq h2{
+padding-top: 70px;
+padding-bottom: 20px;
+}
+.faq button{
+  background-color: #d6d6d2;
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 70px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  white-space: nowrap;
+}
+.current{
+ background-color: blue;
+ color: white;
+ border-radius: 5px;
+}
+.faq button a{
+  
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  transition: 0.7s;
+  
+}
+.faq button a:hover{
+  background-color: black;
+  color: wheat;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+/*the css part for the various questions and the answers */
+.questions{
+  max-width: 100%;
+  width: 100%;
+  background: #f3eeee;
+  margin: 0 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+
+}
+.questions .questions-content{
+  border-radius: 4px;
+  background: #fff7f0;
+  margin: 10px 0;
+  overflow: hidden;
+}
+.questions-content.open{
+  padding-bottom: 10px;
+}
+.questions-content header{
+  display: flex;
+  min-height: 100px;
+  padding: 20px 15px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.questions-content.open header{
+  min-height: 70px;
+}
+
+.questions-content header .title{
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.questions-content header i{
+  font-size: 15px;
+  color: #333;
+}
+.questions-content .description{
+  color: #333;
+  font-weight: 400;
+  padding: 0 15px;
+  height: 0;
+  transition: all 0.2s linear;
+}
+/* the web footer css property */
+footer{
+  width: 100%;
+}
+.footer{
+  background-color: black;
+  color: wheat;
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 600;
+  padding-top: 40px;
+  padding-left: 25px;
+
+}
+
+.footer img{
+  height: 35px;
+}
+
+.footer-rights{
+  text-align: center;
+  font-size: 13px;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energize</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- The header of the navbar -->
+  <header>
+    <!-- The sidebar navigation -->
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()>
+          <i class="fa fa-times" style="font-size: xx-large;"></i>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <button>
+          <i class="fa fa-user"> Log In</i>
+        </button>
+      </ul>
+      <!-- The main page navigation bar -->
+      <ul>
+        <li><img src="project-img/logo-removebg-preview.png" alt="logo" style="height: 30px; margin-left: 20px;"></a></li>
+        <li class="hide-on-mobile"><a href="#">Home</a></li>
+        <li class="hide-on-mobile"><a href="#">About Us</a></li>
+        <li class="hide-on-mobile"><a href="#">Blog</a></li>
+        <button class="hide-on-mobile" style="width: 70px; height: 45px;">
+          <i class="fa fa-user"> Log In</i>
+        </button>
+        <li class="menu-button" onclick=showSidebar()>
+          <i class="fa fa-bars" id="toggleMenu"></i>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- The the hero first heading section of the page -->
+  <section>
+    <div class="container">
+      <div class="split-1">
+        <div><h1>Transform Your Fitness Journey. Start Today</h1>
+        </div>
+        <div style="margin-top: 15px;"><p>Track workouts, monitor progress and, achieve your goal with our all-in-one fitnes app.</p>
+        </div>
+        <div class="Get-Book-Container">
+          <button class="Get-button">Get Started</button>
+          <button class="Book-button"><img src="project-img/exercise_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" height="15px" alt="dumbbell"> Book a Demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+      <div class="hero-bg-mobile">
+
+    </div>
+    <div class="hero-bg">
+
+    </div>
+  </section>
+
+  <section>
+    <div class="video-preview">
+      <div>
+        <h2>Discover how our app works and get fit in no time</h2>
+      </div>
+      <div>
+        <img src="project-img/video-preview.png" width="300px" height="230px" alt="vidoe priview image">
+      </div>
+        <button>
+          Get Started
+        </button>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div>
+        <h2 class="h2-reviews">Hear from our satisfied users who Transformed their lives</h2>
+      </div>
+    <div class="review">
+        <div class="health-coach">
+        <p>"i've lost 10 pounds in just a month!<br> This app keeps me motivated and on track with my fitness goals"</p>
+        <h3 class="names">Alice Johnson</h3>
+        <p class="p-review-career">Health Coach</p>
+      </div>
+      <div class="personal-trainer">
+        <p>"The workout plans are easy to follow,<br> and the progress tracking feature is incredibly helpful. I fell stronger every day!"</p>
+        <h3 class="names">Mark Thompson</h3>
+        <p class="p-review-career">Personal Trainer</p>
+      </div>
+      <div class="fitness-enthusiast">
+        <p>"This app has changed my fitness routine completely. I love the community support and chanllegers!"</p>
+        <h3 class="names">Sarah Parker</h3>
+        <p class="p-review-career">Fitness Enthusiast</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="pricing">
+      <div class="price">
+        <h2>Pricing</h2>
+        <p style="line-height: normal">Start with our free plan and unlock premium features as you grow</p>
+      </div>
+      <div class="price-split">
+        <div class="basic-pricing">
+          <h3>Basic</h3>
+          <p style="line-height: normal;">Ideal for beginners to track workouts and monitor progress</p>
+          <p style="padding-top: 40px;"><span class="free">Free</span> *No credit card needed</p><hr>
+          <i class="fa fa-check"> Customizable workout plans</i>
+          <i class="fa fa-check"> Track daily progress</i>
+          <i class="fa fa-check"> Nutrition tracker</i>
+          <i class="fa fa-check"> Access to community chanlleges</i>
+          <button>Get Started</button>
+        </div>
+        <div class="pro-pricing">
+          <h3>Pro</h3>
+          <p style="line-height: normal;">Everything in the Basic plan plus advanced features for serious athletes</p>
+          <p style="padding-top: 40px;"><span class="free">$29</span> /monthly</p><hr>
+          <p>unlock premium features</p>
+          <i class="fa fa-check"> Personalized coaching</i>
+          <i class="fa fa-check"> Advanced analytics</i>
+          <i class="fa fa-check">Offline access</i>
+          <button>Get Started</button>
+        </div>
+      </div>
+      <div class="final-price-review">
+        <p>All prices are in USD and charged per month with applicable taxes added at checkout </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <diV class="faq">
+      <div>
+        <h2 style="text-align: center;">Frequently Asked Questions</h2>
+        <button>
+          <a class="current" href="#">All</a>
+          <a href="#">Getting Started</a>
+          <a href="#">Pricing</a>
+        </button>
+      </div>
+      <div class="questions">
+        <div class="questions-content">
+          <header>
+            <span class="title">How can the app help me achieve my fitness goals?</span>
+            <i class="fa fa-plus"></i>
+          </header>
+          <p class="description">The app provides tailored workoutp plans, tracks your progress, and offers motivation to keep you on track.</p>
+        </div>
+      </div>
+      <div class="questions">
+        <div class="questions-content">
+          <header>
+            <span class="title">Can i customize my workout plans?</span>
+            <i class="fa fa-plus"></i>
+          </header>
+          <p class="description">Yes, you can create Personalized workout plans based on your fitnes level and goals</p>
+        </div>
+      </div>
+      <div class="questions">
+        <div class="questions-content">
+          <header>
+            <span class="title">Is there a free trial available?</span>
+            <i class="fa fa-plus"></i>
+          </header>
+          <p class="description">Yes, you can start with our free Basic plan to explore features before upgrading</p>
+        </div>
+      </div>
+    </diV>
+  </section>
+
+  <footer>
+    <div class="footer">
+      <div>
+      <img src="project-img/logo-white-footer-removebg-preview.png" alt="footer logo">
+      <h3>Privacy Policy</h3>
+      <h3>Terms of Service</h3>
+      <h3>Contact Us</h3>
+    </div>
+    <p class="footer-rights">&copy;2025 Fitness App  by Monday Prince. All rights reserved.</p>
+    </div>
+    
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
