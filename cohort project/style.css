@@ -478,17 +478,17 @@ padding-bottom: 20px;
 }
 /* the web footer css property */
 footer{
+  background-color: black;
   width: 100%;
+  margin-left: 15px;
 }
 .footer{
-  background-color: black;
   color: wheat;
   font-size: 13px;
   line-height: 30px;
   font-weight: 600;
   padding-top: 40px;
   padding-left: 25px;
-
 }
 
 .footer img{
